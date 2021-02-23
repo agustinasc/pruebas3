@@ -4,22 +4,53 @@
     box-sizing: border-box;
     /* background-color: #5B2E48; */
 }
-/* body{
+:root{
+    --mainColor: #1B3136;
+}
+body{
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    background-color: #5B2E48;
-} */
+    background-color: var(--mainColor);
+    height: 100vh;
+    width: 100%;
+}
 header{
     /* position: absolute; */
     width: 100%;
-     z-index: 1000;
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
     background-color: yellow;
 }
 
 /*********ESTILOS DEL NAV ************/
 
-.nav-form i{
+.container-fluid{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--mainColor);
+    justify-content: flex-end;
+}
+.nav-item{
+    margin: 10px;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: #F1D302;
+}
+
+ .nav-form i{
     position: relative;
     top: 30px;
     color: white;
@@ -28,7 +59,7 @@ header{
 .nav-form input{
     border: none;
     border-radius: 20px;
-    background-color: #1c1c1c;
+    background-color: var(--mainColor);
     color: white;
     width: 250px;
 }
@@ -38,23 +69,20 @@ header{
 }
 .nav-form input:focus{
     box-shadow: 0 0px 0px transparent;
-    background-color: #1c1c1c;
+    background-color: var(--mainColor);
     color: white;
 }
-.nav ul li a {
+/* .nav-list ul li a {
     color: #6d6d6d;
-}
-.nav ul li a .active {
+} */
+.nav-list ul li a .active {
     color: red;
     border-bottom: 3px solid red;
     border-width: thick;
-}
+} 
 .bell a i{
     color: white;
 }
-
-/**** NRO DE LA CAMPANITA ***/
-
 .bell a span {
     padding: 1px 5px;
     background-color: red;
@@ -66,9 +94,8 @@ header{
     left: -7px;
 }
 .user a {
-    color: white;
+    color: white; 
 }
-
         /************** ESTILOS MAIN **************/
 
 .background{
