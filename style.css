@@ -25,6 +25,16 @@ header{
     /* background-color: yellow; */
 }
 
+/* #menu-ham, 
+#menu-ham-close{
+    display: none;
+} */
+/* .menu-ham-icon, 
+.menu-close-icon{
+    visibility: hidden;
+    color: white;
+} */
+
 /*********ESTILOS DEL NAV ************/
 
 .container-fluid{
@@ -77,6 +87,8 @@ nav{
 }
 
     /********* INPUT ********/
+
+
 .nav-form input{
     border: none;
     border-radius: 20px;
@@ -122,7 +134,7 @@ nav{
 .user a {
     color: white; 
 }
-        /************** ESTILOS MAIN **************/
+    /************** ESTILOS MAIN **************/
 
 .background{
     background: url(./img/coverHarri1.jpg) no-repeat center;
@@ -191,7 +203,7 @@ button:hover,
     color: black;
 }
 
-/* ************* GRILLA DE PELICULAS ******* */
+/************** GRILLA DE PELICULAS ******* */
 
 .popular h5 i{
     color: #eb8600;
@@ -220,3 +232,26 @@ button:hover,
     background-repeat: no-repeat;
     background-size: cover; 
 } */
+
+
+/****** MEDIA QUERIES  ********/
+
+@media(min-width:280px) and (max-width: 500px){
+    /* .menu-ham-icon, .menu-close-icon{
+        visibility: visible;
+        color: white;
+        margin: 15px 0px 0px 15px;
+        font-size: 50px;
+    } */
+    nav{
+        display: flex;
+    flex-direction: column;
+    } 
+    .nav-list{
+        display: flex; 
+    flex-direction: column;
+    }
+    .background-content {
+        padding-top: 80px;
+    }
+}
